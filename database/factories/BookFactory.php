@@ -53,7 +53,7 @@ class BookFactory extends Factory
 
         return [
             'category_id'=> Category::factory(),
-            'subcategory_id'=> SubCategory::factory(),
+            'sub_category_id'=> SubCategory::factory(),
             'author_id' =>Author::factory(),
             'rate_id' => Rate::factory(),
             'title'=> $this->faker->randomElement($bookTitles),
