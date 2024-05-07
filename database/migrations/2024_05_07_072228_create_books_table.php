@@ -13,6 +13,15 @@ return new class extends Migration
     {
         Schema::create('books', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('category_id')->constrained('categories','id');
+            $table->foreignId('subcategory_id')->constrained('subcategories','id');
+            $table->foreignId('author_id')->constrained('authors','id');
+            $table->foreignId('rate_id')->constrained('rates','id');
+            $table->string('title');
+            $table->boolean('favorite');
+            $table->date('publicationDate');
+            $table->string('src');
+            $table->text('briefDescription');
             $table->timestamps();
         });
     }
