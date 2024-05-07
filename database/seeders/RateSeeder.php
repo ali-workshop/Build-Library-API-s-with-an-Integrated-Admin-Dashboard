@@ -2,8 +2,9 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Rate;
 use Illuminate\Database\Seeder;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class RateSeeder extends Seeder
 {
@@ -12,6 +13,7 @@ class RateSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        Rate::factory()
+        ->count(12);
     }
 }

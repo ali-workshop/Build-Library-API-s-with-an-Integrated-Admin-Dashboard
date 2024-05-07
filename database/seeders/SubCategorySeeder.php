@@ -12,6 +12,6 @@ class SubCategorySeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        
     }
 }
