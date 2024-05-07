@@ -16,8 +16,9 @@ class RateFactory extends Factory
      */
     public function definition(): array
     {
+        $rate=$this->faker->randomElement(['A','B','C','D','E','F','G']);
         return [
-            //
+            'rate'=>$rate,
         ];
     }
 }

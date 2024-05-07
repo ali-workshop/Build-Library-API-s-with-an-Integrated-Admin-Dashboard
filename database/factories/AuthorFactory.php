@@ -16,8 +16,10 @@ class AuthorFactory extends Factory
      */
     public function definition(): array
     {
+        $biography=$this->faker->randomElement(['dramaAuthor','MathAuthor']);
         return [
-            //
+            'name'=>$this->faker->name(),
+            'biography'=> $biography
         ];
     }
 }

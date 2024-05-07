@@ -16,8 +16,14 @@ class CategoryFactory extends Factory
      */
     public function definition(): array
     {
+        $categories = [
+            "Fiction",
+            "Non-Fiction",
+            'Math',
+            'Science',
+        ];
         return [
-            //
+        'name'=>$this->faker->randomElement($categories),
         ];
     }
 }

@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Category;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -16,8 +17,34 @@ class SubCategoryFactory extends Factory
      */
     public function definition(): array
     {
-        return [
-            //
+        
+        $categories = ['Fiction', 'Non-Fiction'];
+        $subCategories = [
+            "Fiction" => [
+                "Paranormal Fiction",
+                "Action & Adventure",
+                "Westerns",
+                "Historical Fiction",
+                "Literary Fiction",
+                "Christian Fiction"
+            ],
+            "Non-Fiction" => [
+                "History",
+                "Sports & Outdoors",
+                "Travel",
+                "Arts, Music & Photography",
+                ]
         ];
+        
+         // Select a random category
+         $categoryName = $this->faker->randomElement($categories);
+            
+         // Select a random subcategory based on the selected category
+         $name = $this->faker->randomElement($subCategories[$categoryName]);
+ 
+         return [
+             'category_id' => Category::factory(),
+             'name' => $name ,
+         ];    
     }
 }
