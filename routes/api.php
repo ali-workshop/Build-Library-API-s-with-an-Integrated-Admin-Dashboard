@@ -32,14 +32,14 @@ Route::post('/create/book', [AdminController::class,'storeBook']);
 
 
 #Member Api's
-Route::post('/add/to/favorite/book/{id}', [MemberController::class,'addToFavorite'])->middleware('auth','Role:Member');
+Route::post('/add/to/favorite/book/{id}', [MemberController::class,'addToFavorite']);
 Route::post('/rate/book/{id}', [MemberController::class,'rateBook']);
 
 
 
 # visitors api's  what about be the all is get api's
 Route::get('/all/books', [VisitorController::class,'index']);
-Route::post('/filter/category', [VisitorController::class,'CategoryFiler']);
-Route::post('/filter/sub/category', [VisitorController::class,'subCategoryFiler']);
+Route::get('/filter/category', [VisitorController::class,'CategoryFiler']);
+Route::get('/filter/sub/category', [VisitorController::class,'subCategoryFiler']);
 
 
