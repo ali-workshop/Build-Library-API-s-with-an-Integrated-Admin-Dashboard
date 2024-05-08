@@ -35,7 +35,7 @@ use App\Http\Livewire\LaravelExamples\UserManagement;
 //     return redirect('/login');
 // });
 
-
+#visitor web routes.
 Route::get('/', [VisitorWebController::class,'index'])->name('home');
 Route::get('/filter/category', [VisitorWebController::class,'getCategoryFiler'])->name('Category.filer');
 Route::get('/filter/sub/category', [VisitorWebController::class,'getsubCategoryFiler'])->name('subCategory.filer');

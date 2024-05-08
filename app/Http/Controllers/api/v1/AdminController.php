@@ -44,7 +44,7 @@ public function storeBook(StoreBookRequest $request)
         'src' => $request->src,
         'briefDescription' => $request->briefDescription,
         'category_id' => $category->id,
-        'subcategory_id' => $subcategory->id,
+        'sub_category_id' => $subcategory->id,
         'author_id'=>$author->id,
         'rate_id'=>1,
     ]);
