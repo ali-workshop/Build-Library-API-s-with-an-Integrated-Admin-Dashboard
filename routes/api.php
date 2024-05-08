@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\api\v1\AdminController;
+use App\Http\Controllers\api\v1\MemberController;
+use App\Http\Controllers\api\v1\VisitorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,5 +26,20 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::post('/create/category', [AdminController::class,'creatCeategories']);
 Route::post('/create/sub/category', [AdminController::class,'createSubcategories']);
 Route::post('/create/book', [AdminController::class,'storeBook']);
+
+
+
+
+
+#Member Api's
+Route::post('/add/to/favorite/book/{id}', [MemberController::class,'addToFavorite'])->middleware('auth','Role:Member');
+Route::post('/rate/book/{id}', [MemberController::class,'rateBook']);
+
+
+
+# visitors api's  what about be the all is get api's
+Route::get('/all/books', [VisitorController::class,'index']);
+Route::post('/filter/category', [VisitorController::class,'CategoryFiler']);
+Route::post('/filter/sub/category', [VisitorController::class,'subCategoryFiler']);
 
 
