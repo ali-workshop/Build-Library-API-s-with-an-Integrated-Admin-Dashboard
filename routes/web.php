@@ -1,23 +1,24 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use App\Http\Livewire\Rtl;
 
-use App\Http\Livewire\Auth\ForgotPassword;
-use App\Http\Livewire\Auth\ResetPassword;
-use App\Http\Livewire\Auth\SignUp;
-use App\Http\Livewire\Auth\Login;
-use App\Http\Livewire\Dashboard;
+use Illuminate\Http\Request;
+use App\Http\Livewire\Tables;
 use App\Http\Livewire\Billing;
 use App\Http\Livewire\Profile;
-use App\Http\Livewire\Tables;
+use App\Http\Livewire\Dashboard;
+use App\Http\Livewire\Auth\Login;
+use App\Http\Livewire\Auth\SignUp;
 use App\Http\Livewire\StaticSignIn;
 use App\Http\Livewire\StaticSignUp;
-use App\Http\Livewire\Rtl;
+use Illuminate\Support\Facades\Route;
+use App\Http\Livewire\Auth\ResetPassword;
+
+use App\Http\Livewire\Auth\ForgotPassword;
+use App\Http\Controllers\VisitorWebController;
 
 use App\Http\Livewire\LaravelExamples\UserProfile;
 use App\Http\Livewire\LaravelExamples\UserManagement;
-
-use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,9 +31,19 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/', function() {
-    return redirect('/login');
-});
+// Route::get('/', function() {
+//     return redirect('/login');
+// });
+
+
+Route::get('/', [VisitorWebController::class,'index'])->name('home');
+Route::get('/filter/category', [VisitorWebController::class,'getCategoryFiler'])->name('Category.filer');
+Route::get('/filter/sub/category', [VisitorWebController::class,'getsubCategoryFiler'])->name('subCategory.filer');
+Route::post('/filter/category', [VisitorWebController::class,'CategoryFiler'])->name('Category.filer.update');
+Route::post('/filter/sub/category', [VisitorWebController::class,'subCategoryFiler'])->name('subCategory.filer.update');
+
+
+
 
 Route::get('/sign-up', SignUp::class)->name('sign-up');
 Route::get('/login', Login::class)->name('login');
