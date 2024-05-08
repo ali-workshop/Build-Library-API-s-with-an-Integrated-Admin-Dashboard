@@ -7,16 +7,19 @@ use App\Http\Livewire\Tables;
 use App\Http\Livewire\Billing;
 use App\Http\Livewire\Profile;
 use App\Http\Livewire\Dashboard;
+use App\Http\Livewire\StoreBook;
 use App\Http\Livewire\Auth\Login;
+use App\Http\Livewire\AddCategory;
 use App\Http\Livewire\Auth\SignUp;
 use App\Http\Livewire\StaticSignIn;
 use App\Http\Livewire\StaticSignUp;
-use Illuminate\Support\Facades\Route;
-use App\Http\Livewire\Auth\ResetPassword;
 
+use App\Http\Livewire\AddSubCategory;
+use Illuminate\Support\Facades\Route;
+
+use App\Http\Livewire\Auth\ResetPassword;
 use App\Http\Livewire\Auth\ForgotPassword;
 use App\Http\Controllers\VisitorWebController;
-
 use App\Http\Livewire\LaravelExamples\UserProfile;
 use App\Http\Livewire\LaravelExamples\UserManagement;
 
@@ -43,6 +46,7 @@ Route::post('/filter/category', [VisitorWebController::class,'CategoryFiler'])->
 Route::post('/filter/sub/category', [VisitorWebController::class,'subCategoryFiler'])->name('subCategory.filer.update');
 
 
+#Live Wire Routes
 
 
 Route::get('/sign-up', SignUp::class)->name('sign-up');
