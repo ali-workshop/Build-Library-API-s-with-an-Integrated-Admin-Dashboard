@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\api\v1\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +18,11 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+#admin api's
+// Route::post('/login', [AuthController::class, 'authenticate']);
+Route::post('/create/category', [AdminController::class,'creatCeategories']);
+Route::post('/create/sub/category', [AdminController::class,'createSubcategories']);
+Route::post('/create/book', [AdminController::class,'storeBook']);
+
+
