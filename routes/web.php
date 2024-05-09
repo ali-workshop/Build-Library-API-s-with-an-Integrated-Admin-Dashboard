@@ -50,12 +50,15 @@ Route::post('/filter/sub/category', [VisitorWebController::class,'subCategoryFil
 
 
 #admin web routes
-Route::post('/create/category', [AdminWebController::class,'creatCeategories']);
-Route::post('/create/sub/category', [AdminWebController::class,'createSubcategories']);
-Route::post('/create/book', [AdminWebController::class,'storeBook']);
+Route::get('/create/category', [AdminWebController::class,'getCategoryName'])->name('get.category');
+Route::post('/create/category', [AdminWebController::class,'creatCeategories'])->name('store.category');
+Route::get('/create/sub/category', [AdminWebController::class,'getSubCategoryName'])->name('get.sub.category');
+Route::post('/create/sub/category', [AdminWebController::class,'createSubcategories'])->name('store.sub.category');
+Route::get('/create/book', [AdminWebController::class,'createBook'])->name('get.book.info');
+Route::post('/create/book', [AdminWebController::class,'storeBook'])->name('store.book');
 
 
-#Live Wire Routes
+#LiveWire Routes
 
 
 Route::get('/sign-up', SignUp::class)->name('sign-up');

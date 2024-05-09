@@ -26,7 +26,7 @@ class AdminWebController extends Controller
 
     public function creatCeategories(StoreCategoryRequest $request)
     {
-             $NewCategory=$request->name;
+             $NewCategory=$request->catName;
              $category=Category::create(['name'=>$NewCategory]);
              return redirect()->route('')->wiht('success','the category created successfuly');
     }
@@ -54,7 +54,9 @@ class AdminWebController extends Controller
 
     }
     public function storeBook(StoreBookRequest $request)    
+    
     {
+
     $category = Category::firstOrCreate(['name' => $request->category_name]);
     // Find or create the subcategory
     $subcategory = SubCategory::firstOrCreate(['name' => $request->subcategory_name], ['category_id' => $category->id]);
