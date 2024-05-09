@@ -32,8 +32,8 @@ Route::post('/create/book', [AdminController::class,'storeBook']);
 
 
 #Member Api's
-Route::post('/add/to/favorite/book/{id}', [MemberController::class,'addToFavorite']);
-Route::post('/rate/book/{id}', [MemberController::class,'rateBook']);
+Route::put('/add/to/favorite/book/{id}', [MemberController::class,'addToFavorite']);
+Route::put('/rate/book/{id}', [MemberController::class,'rateBook']);
 
 
 
