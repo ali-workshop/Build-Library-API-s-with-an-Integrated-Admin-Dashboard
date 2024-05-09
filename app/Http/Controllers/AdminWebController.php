@@ -24,10 +24,14 @@ class AdminWebController extends Controller
     }
 
 
-    public function creatCeategories(StoreCategoryRequest $request)
-    {
-             $NewCategory=$request->catName;
-             $category=Category::create(['name'=>$NewCategory]);
+    public function creatCeategories(Request $request)
+    {          
+            $NewCategory=$request->catName;
+            // $category=new Category();
+            // $category->name=$NewCategory;   
+            // $category->save();
+            $category= Category::create(['name'=>$request->catName]);
+             dd($category);
              return redirect()->route('home')->with('success','the category created successfuly');
     }
 
@@ -38,7 +42,7 @@ class AdminWebController extends Controller
 
     }
     
-    public function createSubcategories(StoreSubCategoryRequest $request)
+    public function createSubcategories(Request $request)
     {
         $NewSubCategoryData=['name'=>$request->subCatName,'category_id'=>$request->category_id];
         $subcategory=SubCategory::create($NewSubCategoryData);
