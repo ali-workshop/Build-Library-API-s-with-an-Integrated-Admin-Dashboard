@@ -614,6 +614,7 @@
         </div>
       </div>
     </div>
+    <a href="{{route('get.book.info')}}">Creat book</a>
   </main>
 
   <!--   Core JS Files   -->
