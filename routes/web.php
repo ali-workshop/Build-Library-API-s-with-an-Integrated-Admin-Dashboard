@@ -19,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Livewire\Auth\ResetPassword;
 use App\Http\Livewire\Auth\ForgotPassword;
+use App\Http\Controllers\AdminWebController;
 use App\Http\Controllers\VisitorWebController;
 use App\Http\Livewire\LaravelExamples\UserProfile;
 use App\Http\Livewire\LaravelExamples\UserManagement;
@@ -44,6 +45,14 @@ Route::get('/filter/category', [VisitorWebController::class,'getCategoryFiler'])
 Route::get('/filter/sub/category', [VisitorWebController::class,'getsubCategoryFiler'])->name('subCategory.filer');
 Route::post('/filter/category', [VisitorWebController::class,'CategoryFiler'])->name('Category.filer.update');
 Route::post('/filter/sub/category', [VisitorWebController::class,'subCategoryFiler'])->name('subCategory.filer.update');
+
+
+
+
+#admin web routes
+Route::post('/create/category', [AdminWebController::class,'creatCeategories']);
+Route::post('/create/sub/category', [AdminWebController::class,'createSubcategories']);
+Route::post('/create/book', [AdminWebController::class,'storeBook']);
 
 
 #Live Wire Routes
