@@ -2,7 +2,7 @@
     @csrf
     <div class="mb-3">
       <label for="cat" class="form-label">SUB Category Name</label>
-      <input type="text" class="form-control" id="cat" name='catName'>
+      <input type="text" class="form-control" id="cat" name='subCatName'>
     </div>
     <div class="mb-3">
         <label for="catid" class="form-label">Category ID</label>

@@ -28,7 +28,7 @@ class AdminWebController extends Controller
     {
              $NewCategory=$request->catName;
              $category=Category::create(['name'=>$NewCategory]);
-             return redirect()->route('')->wiht('success','the category created successfuly');
+             return redirect()->route('home')->with('success','the category created successfuly');
     }
 
     public function getSubCategoryName()
@@ -40,9 +40,9 @@ class AdminWebController extends Controller
     
     public function createSubcategories(StoreSubCategoryRequest $request)
     {
-        $NewSubCategoryData=['name'=>$request->name,'category_id'=>$request->category_id];
+        $NewSubCategoryData=['name'=>$request->subCatName,'category_id'=>$request->category_id];
         $subcategory=SubCategory::create($NewSubCategoryData);
-        return response()->json(new SubcategoryResource ($subcategory),201);       
+        return redirect()->route('home')->with('success','the sub category created successfuly');
     }
 
 
@@ -73,6 +73,6 @@ class AdminWebController extends Controller
         'author_id'=>$author->id,
         'rate_id'=>1,
     ]);
-    return response()->json($book, 201);
-}
-}
+    return redirect()->route('home')->with('success','the book created successfuly');
+    }
+    }
