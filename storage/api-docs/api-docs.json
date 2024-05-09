@@ -1,0 +1,151 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Laravel ApI Documnetation",
+        "description": "L5 Swagger OpenApi description",
+        "contact": {
+            "email": "alirafikali22@gmail.com"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/all/books": {
+            "get": {
+                "tags": [
+                    "Visitors API'S"
+                ],
+                "summary": "Get all books",
+                "description": "Retrieve a list of all books",
+                "operationId": "index",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/filter/category": {
+            "get": {
+                "tags": [
+                    "Visitors API'S"
+                ],
+                "summary": "Filter books by category",
+                "description": "Filter books based on a provided category name.",
+                "operationId": "CategoryFilter",
+                "parameters": [
+                    {
+                        "name": "catName",
+                        "in": "query",
+                        "description": "Category name to filter books by.",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation. Returns books filtered by the specified category.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Book"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request. Invalid input data provided."
+                    }
+                }
+            }
+        },
+        "/api/filter/sub/category": {
+            "get": {
+                "tags": [
+                    "Visitors API'S"
+                ],
+                "summary": "Filter books by subcategory",
+                "description": "Filter books based on a provided subcategory name.",
+                "operationId": "subCategoryFilter",
+                "parameters": [
+                    {
+                        "name": "subcatName",
+                        "in": "query",
+                        "description": "Subcategory name to filter books by.",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation. Returns books filtered by the specified subcategory.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Book"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request. Invalid input data provided."
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Book": {
+                "title": "Book",
+                "description": "Book object",
+                "properties": {
+                    "id": {
+                        "description": "Unique identifier for the book",
+                        "type": "integer",
+                        "format": "int64",
+                        "example": 1
+                    },
+                    "title": {
+                        "description": "Title of the book",
+                        "type": "string",
+                        "example": "The Hobbit"
+                    },
+                    "author": {
+                        "description": "Author of the book",
+                        "type": "string",
+                        "example": "J.R.R. Tolkien"
+                    },
+                    "category": {
+                        "description": "Category of the book",
+                        "type": "string",
+                        "example": "Fantasy"
+                    },
+                    "published_at": {
+                        "description": "Publishing date of the book",
+                        "type": "string",
+                        "format": "date",
+                        "example": "1937-09-21"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    }
+}
