@@ -9,7 +9,8 @@ class VisitorWebController extends Controller
 {
     
     public function index()
-    {   #laod two realtions instead of one realtion and also i figure way to child relationship using the dot like this(category.subcategory)
+    {   #laod two realtions instead of one realtion 
+        // and also i figure way to child relationship using the dot notation  like this(category.subcategory)
         $books=Book::with(['category','subcategories'])->get();
         // dd($books);
         return view('Visitor.index',['books'=>$books]);
