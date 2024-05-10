@@ -31,7 +31,7 @@ class AdminWebController extends Controller
             // $category->name=$NewCategory;   
             // $category->save();
             $category= Category::create(['name'=>$request->catName]);
-             dd($category);
+            //  dd($category);
              return redirect()->route('home')->with('success','the category created successfuly');
     }
 
