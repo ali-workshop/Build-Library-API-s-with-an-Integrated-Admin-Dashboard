@@ -2,21 +2,24 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
-use App\Models\Category; // Import the Category model if not already imported
+use App\Models\Category; 
 
 class AddCategory extends Component
 {
-    public $catName;
-
-    public function AddCategory()
+    public $name;
+    protected $rules=[
+        'name'=>'required'
+    ];
+    public function addCategory()
     {
         // Create the category using the provided name
-        Category::create(['name' => $this->catName]);
+        
+        $validateData=$this->validate();
+        Category::create($validateData);
 
-        // Clear the input field after submission
-        $this->catName = '';
+      
     }
-
+// test
     public function render()
     {
         return view('livewire.add-category');

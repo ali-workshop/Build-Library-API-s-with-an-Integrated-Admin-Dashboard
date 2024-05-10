@@ -14,8 +14,9 @@ use App\Http\Livewire\Auth\SignUp;
 use App\Http\Livewire\StaticSignIn;
 use App\Http\Livewire\StaticSignUp;
 
-use Illuminate\Support\Facades\Route;
+use App\Http\Livewire\AddSubCategory;
 
+use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Auth\ResetPassword;
 use App\Http\Livewire\Auth\ForgotPassword;
 use App\Http\Controllers\AdminWebController;
@@ -59,7 +60,7 @@ Route::post('/create/book', [AdminWebController::class,'storeBook'])->name('stor
 
 #LiveWire Routes
 Route::get('/add/category', AddCategory::class);
-
+Route::get('/add/subcategory', AddSubCategory::class);
 
 
 

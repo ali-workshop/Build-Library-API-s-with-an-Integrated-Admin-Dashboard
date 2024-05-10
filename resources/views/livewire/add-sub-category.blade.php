@@ -50,14 +50,20 @@
     <!-- Main Content (Form with Navigation and Footer) -->
     <main>
         <!-- Form for adding sub-categories -->
-        <form wire:submit="addCategory">
-            <h2>Add Category</h2>
-            <label>Enter the category name</label>
-            
-            <input type="text" wire:model="name" >
-            <button type="submit">Save</button>
+        <form wire:submit="addSubCategory">
+            <h2>Add Sub-Category</h2>
+            <label>Enter the sub-category name</label>
+            <input type="text" wire:model="subCategoryName" >
+            <label>Select the category</label>
+            <select wire:model="categoryId">
+                <!-- Options for selecting category -->
+                <option value="">Select Category</option>
+                @foreach($categories as $category)
+                    <option value="{{ $category->id }}">{{ $category->name }}</option>
+                @endforeach
+            </select>
+            <button type="submit">Save Sub-Category</button>
         </form>
-    
     </main>
 
     <!-- Include Livewire Scripts -->
