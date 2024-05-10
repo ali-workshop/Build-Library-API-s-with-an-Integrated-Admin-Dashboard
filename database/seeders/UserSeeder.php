@@ -22,7 +22,6 @@ class UserSeeder extends Seeder
 
         ]);
         $admin->assignRole('Admin');
-        // $token = $admin->createToken('admin-api-token')->plainTextToken;
     
 
         $Visitor=User::factory()->create([
