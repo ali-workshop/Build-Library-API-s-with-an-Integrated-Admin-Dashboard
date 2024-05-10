@@ -119,4 +119,4 @@ This project is used by the following companies:
 
 build the system with more features 💪🏻
 # Demo
-![screenshot](C:\xampp\htdocs\backend_course\Library-Management-system-laravel-livewire\soft-ui-dashboard-laravel-livewire-master\Demo\Screenshot (368).png)
+![screenshot](https://github.com/ali-workshop/soft-ui-dashboard-laravel-livewire-master/blob/main/Demo/Screenshot%20(368).png)
