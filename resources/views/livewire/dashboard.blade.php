@@ -7,7 +7,7 @@
               <div class="row">
                 <div class="col-8">
                   <div class="numbers">
-                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Today's Money</p>
+                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Today's Money From Book Sales </p>
                     <h5 class="font-weight-bolder mb-0">
                       $53,000
                       <span class="text-success text-sm font-weight-bolder">+55%</span>
@@ -29,7 +29,7 @@
               <div class="row">
                 <div class="col-8">
                   <div class="numbers">
-                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Today's Users</p>
+                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Today's Visitors</p>
                     <h5 class="font-weight-bolder mb-0">
                       2,300
                       <span class="text-success text-sm font-weight-bolder">+3%</span>
@@ -51,7 +51,7 @@
               <div class="row">
                 <div class="col-8">
                   <div class="numbers">
-                    <p class="text-sm mb-0 text-capitalize font-weight-bold">New Clients</p>
+                    <p class="text-sm mb-0 text-capitalize font-weight-bold">New Members</p>
                     <h5 class="font-weight-bolder mb-0">
                       +3,462
                       <span class="text-danger text-sm font-weight-bolder">-2%</span>
@@ -73,7 +73,7 @@
               <div class="row">
                 <div class="col-8">
                   <div class="numbers">
-                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Sales</p>
+                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Book Sales</p>
                     <h5 class="font-weight-bolder mb-0">
                       $103,430
                       <span class="text-success text-sm font-weight-bolder">+5%</span>
@@ -97,9 +97,9 @@
               <div class="row">
                 <div class="col-lg-6">
                   <div class="d-flex flex-column h-100">
-                    <p class="mb-1 pt-2 text-bold">Built by developers</p>
-                    <h5 class="font-weight-bolder">Soft UI Dashboard</h5>
-                    <p class="mb-5">From colors, cards, typography to complex elements, you will find the full documentation.</p>
+                    <p class="mb-1 pt-2 text-bold">Integrated by (ALI ALI 💪🏻)</p>
+                    <h5 class="font-weight-bolder">Soft UI Livewire Dashboard </h5>
+                    <p class="mb-5"> I use this flexible dashboard to customize it, apply integrations, and utilize it as the admin dashboard for my Laravel app .</p>
                     <a class="text-body text-sm font-weight-bold mb-0 icon-move-right mt-auto" href="javascript:;">
                       Read More
                       <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
@@ -118,7 +118,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-5">
+        {{-- <div class="col-lg-5">
           <div class="card h-100 p-3">
             <div class="overflow-hidden position-relative border-radius-lg bg-cover h-100" style="background-image: url('../assets/img/ivancik.jpg');">
               <span class="mask bg-gradient-dark"></span>
@@ -133,7 +133,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> --}}
       <div class="row mt-4">
         <div class="col-lg-5 mb-lg-0 mb-4">
           <div class="card">
@@ -143,7 +143,7 @@
                   <canvas id="chart-bars" class="chart-canvas" height="170px"></canvas>
                 </div>
               </div>
-              <h6 class="ms-2 mt-4 mb-0"> Active Users </h6>
+              <h6 class="ms-2 mt-4 mb-0"> Active Visitors </h6>
               <p class="text-sm ms-2"> (<span class="font-weight-bolder">+23%</span>) than last week </p>
               <div class="container border-radius-lg">
                 <div class="row">
@@ -254,10 +254,10 @@
         <div class="col-lg-7">
           <div class="card">
             <div class="card-header pb-0">
-              <h6>Sales overview</h6>
+              <h6>Books Sales overview</h6>
               <p class="text-sm">
                 <i class="fa fa-arrow-up text-success"></i>
-                <span class="font-weight-bold">4% more</span> in 2021
+                <span class="font-weight-bold">4% more</span> in 2024
               </p>
             </div>
             <div class="card-body p-3">
@@ -274,7 +274,7 @@
             <div class="card-header pb-0">
               <div class="row">
                 <div class="col-lg-6 col-7">
-                  <h6>Projects</h6>
+                  <h6>Libraries</h6>
                   <p class="text-sm mb-0">
                     <i class="fa fa-check text-info" aria-hidden="true"></i>
                     <span class="font-weight-bold ms-1">30 done</span> this month
@@ -299,10 +299,10 @@
                 <table class="table align-items-center mb-0">
                   <thead>
                     <tr>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Companies</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Active Libraray</th>
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Members</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Budget</th>
-                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Completion</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Best Sales</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -313,7 +313,7 @@
                             <img src="../assets/img/small-logos/logo-xd.svg" class="avatar avatar-sm me-3">
                           </div>
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Soft UI XD Version</h6>
+                            <h6 class="mb-0 text-sm">المكتبة الوطنية بحلب</h6>
                           </div>
                         </div>
                       </td>
@@ -356,7 +356,7 @@
                             <img src="../assets/img/small-logos/logo-atlassian.svg" class="avatar avatar-sm me-3">
                           </div>
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Add Progress Track</h6>
+                            <h6 class="mb-0 text-sm">مكتبة المعهد الفرنسي للدراسات العربية في داماس  </h6>
                           </div>
                         </div>
                       </td>
@@ -393,7 +393,7 @@
                             <img src="../assets/img/small-logos/logo-slack.svg" class="avatar avatar-sm me-3">
                           </div>
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Fix Platform Errors</h6>
+                            <h6 class="mb-0 text-sm">مكتبة جامعة دمشق</h6>
                           </div>
                         </div>
                       </td>
@@ -430,7 +430,7 @@
                             <img src="../assets/img/small-logos/logo-spotify.svg" class="avatar avatar-sm me-3">
                           </div>
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Launch our Mobile App</h6>
+                            <h6 class="mb-0 text-sm">المكتبة الظاهرية</h6>
                           </div>
                         </div>
                       </td>
@@ -473,7 +473,7 @@
                             <img src="../assets/img/small-logos/logo-jira.svg" class="avatar avatar-sm me-3">
                           </div>
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Add the New Pricing Page</h6>
+                            <h6 class="mb-0 text-sm">مكتبة المأمون</h6>
                           </div>
                         </div>
                       </td>
@@ -507,7 +507,7 @@
                             <img src="../assets/img/small-logos/logo-invision.svg" class="avatar avatar-sm me-3">
                           </div>
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Redesign New Online Shop</h6>
+                            <h6 class="mb-0 text-sm">مكتبة الاتحاد الثقافي</h6>
                           </div>
                         </div>
                       </td>
@@ -546,7 +546,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="card h-100">
             <div class="card-header pb-0">
-              <h6>Orders overview</h6>
+              <h6>Orders AND Sales overview</h6>
               <p class="text-sm">
                 <i class="fa fa-arrow-up text-success" aria-hidden="true"></i>
                 <span class="font-weight-bold">24%</span> this month
@@ -614,7 +614,14 @@
         </div>
       </div>
     </div>
-    <a href="{{route('get.book.info')}}">Creat book</a>
+    <h1>Normal Web Routes 😁</h1>
+    <a href="{{route('get.category')}}">ِADD Category</a><br><br>
+    <a href="{{route('get.subcategory')}}">ADD Sub Category</a><br><br>
+    <a href="{{route('get.book.info')}}">Creat book</a><br><br>
+    <h1>LIVEWIRE Web Routes (without Reloading 😎) SPA😎 </h1>
+    <a href="{{route('get.category.livewire')}}">ِADD Category</a><br><br>
+    <a href="{{route('get.sub.category.livewire')}}">ADD Sub Category</a><br><br>
+   
   </main>
 
   <!--   Core JS Files   -->

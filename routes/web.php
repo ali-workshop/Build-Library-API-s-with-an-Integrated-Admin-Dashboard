@@ -52,15 +52,15 @@ Route::post('/filter/sub/category', [VisitorWebController::class,'subCategoryFil
 #admin web routes
 Route::get('/create/category', [AdminWebController::class,'getCategoryName'])->name('get.category');
 Route::post('/create/category', [AdminWebController::class,'creatCeategories'])->name('store.category');
-Route::get('/create/sub/category', [AdminWebController::class,'getSubCategoryName'])->name('get.sub.category');
+Route::get('/create/sub/category', [AdminWebController::class,'getSubCategoryName'])->name('get.subcategory');
 Route::post('/create/sub/category', [AdminWebController::class,'createSubcategories'])->name('store.sub.category');
 Route::get('/create/book', [AdminWebController::class,'createBook'])->name('get.book.info');
 Route::post('/create/book', [AdminWebController::class,'storeBook'])->name('store.book');
 
 
 #LiveWire Routes
-Route::get('/add/category', AddCategory::class);
-Route::get('/add/subcategory', AddSubCategory::class);
+Route::get('/add/category', AddCategory::class)->name('get.category.livewire');
+Route::get('/add/subcategory', AddSubCategory::class)->name('get.sub.category.livewire');
 
 
 

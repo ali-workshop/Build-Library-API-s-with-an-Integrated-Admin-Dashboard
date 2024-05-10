@@ -18,10 +18,10 @@
             <div class="col-auto my-auto">
                 <div class="h-100">
                     <h5 class="mb-1">
-                        Alec Thompson
+                        ALi ALi
                     </h5>
                     <p class="mb-0 font-weight-bold text-sm">
-                        CEO / Co-Founder
+                        ML DEV / Laravel Junior
                     </p>
                 </div>
             </div>
@@ -196,20 +196,18 @@
                 </div>
                 <div class="card-body p-3">
                     <p class="text-sm">
-                        Hi, I’m Alec Thompson, Decisions: If you can’t decide, the answer is no. If two equally
-                        difficult paths, choose the one more painful in the short term (pain avoidance is creating an
-                        illusion of equality).
+                        Hi ,I am Ali Ali a passionate machine learning developer with a deep love for integrating AI with web technologies. I excels in bridging the gap between traditional web development and the cutting-edge advancements in artificial intelligence. MY expertise lies in leveraging machine learning algorithms and techniques to enhance various aspects of web applications, from personalized user experiences to predictive analytics😎.
                     </p>
                     <hr class="horizontal gray-light my-4">
                     <ul class="list-group">
                         <li class="list-group-item border-0 ps-0 pt-0 text-sm"><strong class="text-dark">Full
-                                Name:</strong> &nbsp; Alec M. Thompson</li>
+                                Name:</strong> &nbsp; ALi R. Ali</li>
                         <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Mobile:</strong>
                             &nbsp; (44) 123 1234 123</li>
                         <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Email:</strong>
-                            &nbsp; alecthompson@mail.com</li>
+                            &nbsp; alirafikali22@mail.com</li>
                         <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Location:</strong>
-                            &nbsp; USA</li>
+                            &nbsp; Erbil</li>
                         <li class="list-group-item border-0 ps-0 pb-0">
                             <strong class="text-dark text-sm">Social:</strong> &nbsp;
                             <a class="btn btn-facebook btn-simple mb-0 ps-1 pe-2 py-0" href="javascript:;">
