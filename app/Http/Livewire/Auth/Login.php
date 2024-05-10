@@ -2,13 +2,15 @@
 
 namespace App\Http\Livewire\Auth;
 
-use Livewire\Component;
+use App\Models\Book;
 use App\Models\User;
+use Livewire\Component;
 
 class Login extends Component
 {
     public $email = '';
     public $password = '';
+    public $books;
     public $remember_me = false;
 
     protected $rules = [
@@ -37,6 +39,7 @@ class Login extends Component
 
     public function render()
     {
+        $this->books = Book::all();
         return view('livewire.auth.login');
     }
 }
