@@ -83,8 +83,8 @@ php artisan serve
 ``` 
 Visit http://localhost:8000/login in your browser
 
-## Installation with Docker (Bonus)
-the steps will be here soon 💪🏻
+## Installation with Docker (Bonus)💪🏻💪🏻
+the steps will be here soon 
 ## Feedback
 
 the best task until now 💪🏻
@@ -119,4 +119,62 @@ This project is used by the following companies:
 
 build the system with more features 💪🏻
 # Demo
-![screenshot](C:\xampp\htdocs\backend_course\Library-Management-system-laravel-livewire\soft-ui-dashboard-laravel-livewire-master\Demo\Screenshot (368).png)
+![screenshot](https://github.com/ali-workshop/soft-ui-dashboard-laravel-livewire-master/blob/main/Demo/Screenshot%20(368).png)
+
+
+![screenshot](https://github.com/ali-workshop/soft-ui-dashboard-laravel-livewire-master/blob/main/Demo/Screenshot%20(369).png)
+
+
+
+![screenshot](https://github.com/ali-workshop/soft-ui-dashboard-laravel-livewire-master/blob/main/Demo/Screenshot%20(370).png)
+
+
+
+![screenshot](https://github.com/ali-workshop/soft-ui-dashboard-laravel-livewire-master/blob/main/Demo/Screenshot%20(371).png)
+
+
+
+![screenshot](https://github.com/ali-workshop/soft-ui-dashboard-laravel-livewire-master/blob/main/Demo/Screenshot%20(372).png)
+
+
+
+![screenshot](https://github.com/ali-workshop/soft-ui-dashboard-laravel-livewire-master/blob/main/Demo/Screenshot%20(373).png)
+
+
+
+![screenshot](https://github.com/ali-workshop/soft-ui-dashboard-laravel-livewire-master/blob/main/Demo/Screenshot%20(374).png)
+
+
+
+![screenshot](https://github.com/ali-workshop/soft-ui-dashboard-laravel-livewire-master/blob/main/Demo/Screenshot%20(375).png)
+
+
+
+
+![screenshot](https://github.com/ali-workshop/soft-ui-dashboard-laravel-livewire-master/blob/main/Demo/Screenshot%20(376).png)
+
+
+
+![screenshot](https://github.com/ali-workshop/soft-ui-dashboard-laravel-livewire-master/blob/main/Demo/Screenshot%20(377).png)
+
+
+
+![screenshot](https://github.com/ali-workshop/soft-ui-dashboard-laravel-livewire-master/blob/main/Demo/Screenshot%20(378).png)
+
+
+
+![screenshot](https://github.com/ali-workshop/soft-ui-dashboard-laravel-livewire-master/blob/main/Demo/Screenshot%20(379).png)
+
+
+
+![screenshot](https://github.com/ali-workshop/soft-ui-dashboard-laravel-livewire-master/blob/main/Demo/Screenshot%20(380).png)
+
+
+
+
+
+![screenshot](https://github.com/ali-workshop/soft-ui-dashboard-laravel-livewire-master/blob/main/Demo/Screenshot%20(381).png)
+
+
+
+![screenshot](https://github.com/ali-workshop/soft-ui-dashboard-laravel-livewire-master/blob/main/Demo/Screenshot%20(382).png)
