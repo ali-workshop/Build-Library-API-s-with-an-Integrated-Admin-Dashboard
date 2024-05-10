@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\api\v1;
+namespace App\Http\Controllers\api\V1;
 
 use App\Models\Book;
 use App\Models\Author;
@@ -66,7 +66,7 @@ class AdminController extends Controller
  * )
  */
 
-    public function creatCeategories(StoreCategoryRequest $request)
+    public function createCategories(StoreCategoryRequest $request)
     {
              $NewCategory=$request->name;
              $category=Category::create(['name'=>$NewCategory]);

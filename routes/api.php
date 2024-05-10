@@ -3,9 +3,9 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\api\v1\AdminController;
-use App\Http\Controllers\api\v1\MemberController;
-use App\Http\Controllers\api\v1\VisitorController;
+use App\Http\Controllers\api\V1\AdminController;
+use App\Http\Controllers\api\V1\MemberController;
+use App\Http\Controllers\api\V1\VisitorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,9 +30,9 @@ Route::controller(AuthController::class)->group(function() {
 });
 
 #admin api's
-// first way
-Route::post('/create/category', [AdminController::class,'creatCeategories']);
-Route::post('/create/sub/category', [AdminController::class,'createSubcategories']);
+// first way                                                                        
+// Route::post('/create/category', [AdminController::class, 'createCategories'])->middleware('auth:sanctum','permission:Create Category'); test permission
+// Route::post('/create/sub/category', [AdminController::class,'createSubcategories']);
 // Route::post('/create/book', [AdminController::class,'storeBook']);
 
 #Member Api's
@@ -41,28 +41,28 @@ Route::post('/create/sub/category', [AdminController::class,'createSubcategories
 // Route::put('/rate/book/{id}', [MemberController::class,'rateBook']);
 
 // second way using group 
-// // Admin protected routes
-// Route::middleware('auth:sanctum,role:Admin')->group( function () {
-//     Route::post('/logout', [AuthController::class, 'logout']);
+// Admin protected routes
+Route::middleware(['auth:sanctum','role:Admin'])->group( function () {
+    Route::post('/logout', [AuthController::class, 'logout']);
 
-//     Route::controller(AdminController::class)->group(function() {
-//         // Route::post('/create/category', 'creatCeategories');
-//         // Route::post('/create/sub/category', 'createSubcategories');
-//         Route::post('/create/book', 'storeBook');
-//     });
+    Route::controller(AdminController::class)->group(function() {
+        Route::post('/create/category', 'createCategories');
+        Route::post('/create/sub/category', 'createSubcategories');
+        Route::post('/create/book', 'storeBook');
+    });
 
-// });
+});
 
-// #Member protected routes
-// Route::middleware('auth:sanctum,role:Member')->group( function ()
-//      {
-//     Route::controller(MemberController::class)->group(function() {
-//         Route::put('/add/to/favorite/book/{id}', 'addToFavorite');
-//         Route::put('/rate/book/{id}', 'rateBook');  
-//     });
-// });
+#Member protected routes
+Route::middleware(['auth:sanctum','role:Member'])->group( function ()
+     {
+    Route::controller(MemberController::class)->group(function() {
+        Route::put('/add/to/favorite/book/{id}', 'addToFavorite');
+        Route::put('/rate/book/{id}', 'rateBook');  
+    });
+});
 
-# visitors api's  what about be the all is get api's
+#public visitors api's 
 Route::get('/all/books', [VisitorController::class,'index']);
 Route::get('/filter/category', [VisitorController::class,'CategoryFiler']);
 Route::get('/filter/sub/category', [VisitorController::class,'subCategoryFiler']);

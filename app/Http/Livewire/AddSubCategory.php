@@ -10,11 +10,11 @@ class AddSubCategory extends Component
     public $name;
     public $categories;
     
-    public $category_id; // Added property for category_id
+    public $category_id; 
 
     protected $rules = [
         'name' => 'required',
-        'category_id' => 'required|exists:categories,id', // Fixed validation rule
+        'category_id' => 'required|exists:categories,id', 
     ];
 
     public function addSubCategory()
