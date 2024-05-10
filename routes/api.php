@@ -22,9 +22,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-
+//  i make those api's as cases:
+     
 // Public routes of authtication
-// in the case below both the admin and the member can register and login 
+// in the case below only  both the admin and the member can register and login 
 Route::middleware(['role:Admin|Member'])->group( function ()
  {
 Route::controller(AuthController::class)->group(function() {
