@@ -79,4 +79,6 @@ class AdminWebController extends Controller
     ]);
     return redirect()->route('home')->with('success','the book created successfuly');
     }
-    }
+ 
+}
+#}
