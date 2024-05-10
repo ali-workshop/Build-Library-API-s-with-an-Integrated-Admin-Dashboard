@@ -62,8 +62,8 @@
             </div>
         </div>
     </div>
-
-    <!DOCTYPE html>
+<h4>Visitors Page</h4><br><br>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
