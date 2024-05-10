@@ -24,11 +24,28 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 // Public routes of authtication
+// in the case below both the admin and the member can register and login 
+Route::middleware(['role:Admin|Member'])->group( function ()
+ {
 Route::controller(AuthController::class)->group(function() {
     Route::post('/register', 'register');
     Route::post('/login', 'login');
 });
+});
 
+// in the case below just the member can register and login , and the admin just login
+
+
+
+
+
+
+
+
+
+
+
+# DEFINE API'S
 #admin api's
 // first way                                                                        
 // Route::post('/create/category', [AdminController::class, 'createCategories'])->middleware('auth:sanctum','permission:Create Category'); test permission
@@ -42,7 +59,8 @@ Route::controller(AuthController::class)->group(function() {
 
 // second way using group 
 // Admin protected routes
-Route::middleware(['auth:sanctum','role:Admin'])->group( function () {
+Route::middleware(['auth:sanctum','role:Admin'])->group( function ()
+ {
     Route::post('/logout', [AuthController::class, 'logout']);
 
     Route::controller(AdminController::class)->group(function() {
@@ -56,6 +74,7 @@ Route::middleware(['auth:sanctum','role:Admin'])->group( function () {
 #Member protected routes
 Route::middleware(['auth:sanctum','role:Member'])->group( function ()
      {
+    Route::post('/logout', [AuthController::class, 'logout']);
     Route::controller(MemberController::class)->group(function() {
         Route::put('/add/to/favorite/book/{id}', 'addToFavorite');
         Route::put('/rate/book/{id}', 'rateBook');  
