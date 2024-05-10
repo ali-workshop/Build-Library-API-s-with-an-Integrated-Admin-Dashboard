@@ -83,8 +83,8 @@ php artisan serve
 ``` 
 Visit http://localhost:8000/login in your browser
 
-## Installation with Docker (Bonus)
-the steps will be here soon 💪🏻
+## Installation with Docker (Bonus)💪🏻💪🏻
+the steps will be here soon 
 ## Feedback
 
 the best task until now 💪🏻
