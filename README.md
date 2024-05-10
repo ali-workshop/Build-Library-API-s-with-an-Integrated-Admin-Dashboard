@@ -1,7 +1,7 @@
 # Crafting Library APIs with an Integrated Admin Dashboard
 ### In this task, I went through defining simple APIs to serve and mimic a real library management system. Additionally, I experimented with a new approach, utilizing Livewire for the admin API to create a single-page application (SPA) dashboard without reloading, solely relying on Laravel and without any JavaScript.When it came to selecting the dashboard solution, I faced a challenge in choosing between two valuable options:Filement Dashboard - Admin Panel and Soft UI Dashboard Laravel Livewire from Creative Tim. Both options are highly comprehensive and well-suited for systems of this nature. Ultimately, I opted for Soft UI because I believe it offers greater flexibility for customization. Finally, my desire to explore Livewire further also influenced my decision to choose Soft UI.
 
-### في هذه المهمة، قمت بتعريف واجهات برمجة التطبيقات البسيطة لخدمة وتقليد نظام إدارة مكتبة حقيقي. بالإضافة إلى ذلك، قمت بتجربة نهج جديد، باستخدام لايف واير لواجهة برمجة تطبيقات المدير لإنشاء لوحة معلومات تطبيق من صفحة واحدة (سينغل بيج اب) دون إعادة التحميل، والاعتماد فقط على لارافيل ودون أي جافاسكريبت.من اجل اختيار الداشبورد، واجهت مشكلة  في الاختيار بين خيارين قيمين: 
+### في هذه المهمة، قمت بتعريف واجهات برمجة التطبيقات البسيطة لخدمة وتقليد نظام إدارة مكتبة حقيقي. بالإضافة إلى ذلك، قمت بتجربة نهج جديد، باستخدام لايف واير لواجهة برمجة تطبيقات المدير لإنشاء لوحة معلومات تطبيق من صفحة واحدة (سينغل بيج اب) دون إعادة التحميل، والاعتماد فقط على لارافيل ودون أي جافاسكريبت.من اجل اختيار الداشبورد، واجهت مشكلة  في الاختيار بين خيارين دهااب: 
 <1>Filement Dashboard - Admin Panel
 
  
